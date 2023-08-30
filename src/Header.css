@@ -1,0 +1,289 @@
+.header{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    left: 0px;
+    padding: 0px 1em;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+    height: inherit;
+}
+
+@media (min-width: 768px){
+    .JRtlS {
+        padding: 0px 36px;
+    }
+
+    .gbHCZO {
+        min-width: 79px;
+        height: 48px;
+        margin-right: 32px;
+        cursor: pointer;
+    }
+}
+
+.JRtlS {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /* padding: 0px 20px; */
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    will-change: background-color, height;
+    height: 72px;
+    z-index: 1;
+}
+
+.hMqyAO {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.container--hw-full {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    background-color: transparent;
+    background-image: url('https://static-assets.bamgrid.com/product/disneyplus/images/logo.1a56f51c764022ee769c91d894d44326.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    min-height: 38px;
+    min-width: 63px;
+    width: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.iLqZlV {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+@media (min-width: 1024px){
+    .iLqZlV:not(.subnav-item) > a, .iLqZlV:not(.subnav-item) > span {
+        padding: 16px 18px;
+    }
+}
+
+@media (min-width: 1024px){
+    .iLqZlV > a, .iLqZlV > span {
+        padding: 16px 18px;
+    }
+}
+
+.iLqZlV > a, .iLqZlV > span {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 0%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.iLqZlV p, .iLqZlV:not(.subnav-item) span {
+    position: relative;
+}
+
+.iLqZlV > a span, .iLqZlV > span span {
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+}
+
+.bFBSwK {
+    height: 24px;
+    min-width: 24px;
+    width: 24px;
+    z-index: auto;
+}
+
+@media (min-width: 1024px){
+    .iLqZlV > a span svg, .iLqZlV > span span svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+.bFBSwK path {
+    fill: rgb(249, 249, 249);
+}
+
+@media (min-width: 1024px){
+    .iLqZlV:not(.subnav-item) p {
+        display: inline-block;
+    }
+}
+
+.page-nav.page-nav--small {
+    font-size: 13px;
+    letter-spacing: 1.42px;
+    line-height: 1.07;
+}
+
+.text-color--primary {
+    color: #f9f9f9;
+}
+
+.margin--left-2 {
+    margin-left: 0.5rem;
+}
+
+.page-nav {
+    font-family: Avenir-World-for-Disney-Demi,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.iLqZlV:hover a p::before, .iLqZlV:focus a p::before, .iLqZlV:hover a span::before, .iLqZlV:focus a span::before {
+    background-color: rgb(249, 249, 249);
+    transform: scaleX(1);
+    visibility: visible;
+    opacity: 1 !important;
+}
+
+.iLqZlV p::before, .iLqZlV:not(.subnav-item) span::before {
+    background-color: rgba(249, 249, 249, 0.4);
+    border-radius: 0px 0px 4px 4px;
+    bottom: -6px;
+    content: "";
+    height: 2px;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    visibility: hidden;
+    width: auto;
+}
+
+.cUjquv {
+    transition: all 0.3s ease 0s;
+}
+
+.margin--right-1 {
+    margin-right: 0.25rem;
+}
+
+.icon--size-12 {
+    height: 12px;
+    width: 12px;
+}
+
+.icon--plus, .icon--plus-inverse {
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.icon--plus {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0.25 0.25 25.5 25.5'%3E%3Cpath fill='%23F9F9F9' d='M22.85 10.1H15.9V3.15a2.9 2.9 0 0 0-5.8 0v6.95H3.15a2.9 2.9 0 0 0 0 5.8h6.95v6.95a2.9 2.9 0 0 0 5.8 0V15.9h6.95a2.9 2.9 0 1 0 0-5.8Z'/%3E%3C/svg%3E);
+}
+
+.button.button--secondary {
+    background: #40424a;
+    color: #f9f9f9;
+}
+
+.button.button--destructive, .button.button--outline, .button.button--outline-invalid, .button.button--outline-transparent, .button.button--outline-valid, .button.button--play, .button.button--play.button--play-secondary, .button.button--primary, .button.button--secondary, .theme--kids-mode .button.button--play.button--play-secondary {
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+.gLASoB {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+}
+
+.iPFLWk {
+    padding: 0px 24px;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.2s ease-in-out 0s;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    opacity: 1;
+    visibility: visible;
+}
+
+.button {
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gLASoB {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+}
+
+p{
+    margin-top: revert;
+    margin-bottom: revert;
+}
+
+@media (min-width: 1024px){
+    .iLqZlV.hidden {
+        display: flex !important;
+    }
+}
+
+.iLqZlV.hidden {
+    display: none;
+}
