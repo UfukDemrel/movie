@@ -1,13 +1,29 @@
-import React from 'react';
-
-
+import React, { useState } from 'react';
 
 function Header() {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const ulClass = isHovered ? 'sc-fgfRvd kHBzmg' : 'sc-fgfRvd jwdAZt';
+  const liClass = isHovered ? 'sc-likbZx dcjqQs' : 'sc-likbZx gIjMpm';
+  const divClass = isHovered ? 'sc-likbZx dcjqQs active' : 'sc-likbZx gIjMpm';  
+  const pClass = isHovered ? 'body-copy margin--0 sc-eKZiaR text-color--secondary margin--left-4' : 'body-copy margin--0 sc-eKZiaR iesoaL text-color--secondary margin--left-4';
+  const active = isHovered ? 'sc-ePZHVD kxEVVW active' : 'sc-ePZHVD kxEVVW';  
+  
+
   return (
     <div>
       <header className="header">
         <nav className='sc-hGoxap JRtlS sc-kQsIoO iJigMv navigation navigation__navigation-bar'>
-        <button aria-label="İçeriğe Atla" data-testid="" role="button" id="skipToContentButton" kind="secondary" class="sc-brqgnP iPFLWk button button--secondary sc-dCzMmV gLASoB" type="submit">İçeriğe Atla</button>
+        <button aria-label="İçeriğe Atla" data-testid="" id="skipToContentButton" kind="secondary" class="sc-brqgnP iPFLWk button button--secondary sc-dCzMmV gLASoB" type="submit">İçeriğe Atla</button>
           <ul id="nav-list" aria-hidden="true" className="sc-eXNvrr hMqyAO">
               <div className="sc-jbKcbu gbHCZO" aria-label="logo" title="logo" role="img" id="logo" placeholder="logo" tabIndex="0">
                 <div className="logo container--hw-full logo cursor--pointer" role="img"></div>
@@ -91,7 +107,74 @@ function Header() {
                 </a>
               </span>
           </ul>
+
+          <div id="account-dropdown" data-testid="account-dropdown" aria-haspopup="true" aria-expanded="false" aria-label="DEMİREL adlı kullanıcının profili. Profilleri ve erişim ayarlarını değiştirebileceğiniz açılır menüyü genişletmek için bunu seçin." role="button" class="sc-hIVACf cXrgwk dropdown">
           
+          <ul tabIndex="0"
+            data-testid="account-dropdown-list"
+            role="menu"
+            className={ulClass}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+            <li className={liClass}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}> 
+              <a href='sadasd' id="active-profile" data-testid="dropdown-active-profile" tabIndex="-1" class="sc-bEjcJn kYCEzQ">
+                <p className={pClass}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>DEMİREL</p>
+                  <div aria-label="" data-testid="" role="button" tabIndex="-1" class="sc-jtggT sc-bGbJRg gHzMKE">
+                    <div class="sc-dEoRIm sc-jtRlXQ kOICNQ profile-avatar" data-testid="selected-avatar-image"></div>
+                  </div>
+              </a>
+            </li>
+            <div className={active}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave} role="presentation"></div>
+            <div class="sc-drMfKT hbptig">
+              
+            <li className={divClass}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+                <a href='sadasd' aria-label="Profilim adlı kullanıcının profiline geçmek için bunu seçin." data-testid="dropdown-profile-0" role="menuitem" tabindex="-1" aria-hidden="true">
+                <div aria-label="" data-testid="" role="button" tabIndex="-1" class="sc-jtggT sc-bGbJRg gHzMKE">
+                  <div class="sc-dEoRIm sc-jtRlXQ jpVPud profile-avatar" data-testid="selected-avatar-image"></div>
+                </div>
+                <p class="body-copy margin--0 sc-eKZiaR eeBCak text-color--secondary margin--left-4">Profilim</p>
+                </a>
+            </li>
+
+            <li aria-hidden="true" aria-label="Profil Ekleyin" class="sc-likbZx dcjqQs dropdown-options active" id="dropdown-option_add-profile" data-testid="dropdown-option-0-add-profile" role="menuitem" tabindex="-1">
+                <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">
+                  <span style={{alignItems: "center", color: "rgb(202, 202, 202)", display: "flex"}}>
+                    <div aria-label="Add Profile" class="sc-fyjhYU AEjQN add-profile" role="button" style={{marginRight: "16px"}}>
+                      <svg aria-hidden="true" aria-label="plus" color="white" role="img" transform="" version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="sc-bRBYWo bFBSwK">
+                      <title></title>
+                      <path d="M16.469 17.219V5.5a1 1 0 0 1 1-1h.312a1 1 0 0 1 1 1v11.719H30.5a1 1 0 0 1 1 1v.312a1 1 0 0 1-1 1H18.781V31.25a1 1 0 0 1-1 1h-.312a1 1 0 0 1-1-1V19.531H4.75a1 1 0 0 1-1-1v-.312a1 1 0 0 1 1-1h11.719z" class="sc-Rmtcm cUjquv"></path>
+                      </svg>
+                    </div>
+                    <span style={{maxWidth: "134px"}}>Profil Ekleyin</span>
+                  </span>
+                </a>
+            </li>
+
+            <li aria-hidden="true" aria-label="Profilleri Düzenleyin" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_edit-profiles" data-testid="dropdown-option-1-edit-profiles" role="menuitem" tabIndex="-1">
+                <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Profilleri Düzenleyin</a></li>
+                <li aria-hidden="true" aria-label="Uygulama Ayarları" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_app-settings" data-testid="dropdown-option-2-app-settings" role="menuitem" tabindex="-1">
+                  <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Uygulama Ayarları</a>
+                </li>
+                <li aria-hidden="true" aria-label="Hesap" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_account" data-testid="dropdown-option-3-account" role="menuitem" tabIndex="-1">
+                  <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Hesap</a>
+                </li>
+                <li aria-hidden="true" aria-label="Yardım" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_help" data-testid="dropdown-option-4-help" role="menuitem" tabindex="-1">
+                  <a aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" href="https://help.disneyplus.com" tabindex="-1" target="external">Yardım</a>
+                </li>
+                <li aria-hidden="true" aria-label="Oturumu Kapat" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_logout" data-testid="dropdown-option-5-logout" role="menuitem" tabindex="-1">
+                  <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Oturumu Kapat</a>
+                </li>
+            </div>
+          </ul>
+          </div>
         </nav>
       </header>
     </div>

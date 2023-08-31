@@ -278,12 +278,364 @@ p{
     margin-bottom: revert;
 }
 
+.iLqZlV.hidden {
+    display: none;
+}
+
 @media (min-width: 1024px){
     .iLqZlV.hidden {
         display: flex !important;
     }
 }
 
-.iLqZlV.hidden {
+.dropdown {
+    background-color: #31343e;
+}
+
+.cXrgwk {
+    /* top: 0px;
+    right: calc(3.5vw + 24px); */
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    position: initial;
+}
+
+.kHBzmg {
+    background: rgb(19, 19, 19);
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 18px 0px;
+    height: auto;
+    max-height: calc(100vh - 40px);
+    padding: 0px 20px 20px;
+    width: 240px;
+    z-index: 10;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px;
+    position: absolute;
+    right: 0px;
+    transition-duration: 300ms;
+    transition-property: max-height, height, padding;
+    transition-timing-function: ease-in-out;
+}
+
+.kHBzmg > li:first-child {
+    height: 72px;
+    opacity: 1;
+    width: auto;
+}
+
+@media (min-width: 1440px){
+    .kHBzmg {
+        width: 240px;
+    }
+}
+
+.dcjqQs {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    opacity: 1;
+    overflow: hidden;
+    padding: 8px 0px;
+    position: relative;
+    text-align: left;
+    transition: opacity 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 250ms;
+    width: 0px;
+}
+
+.kHBzmg > li:first-child a {
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+}
+
+.dcjqQs:hover p, .dcjqQs:focus p, .dcjqQs:hover a, .dcjqQs:focus a {
+    color: rgb(249, 249, 249);
+}
+
+.dcjqQs a {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 100%;
+}
+
+.kYCEzQ {
+    position: relative;
+}
+
+.kHBzmg > li:first-child p {
+    color: rgb(249, 249, 249);
+    margin-right: 16px;
+}
+
+.dcjqQs:hover p, .dcjqQs:focus p, .dcjqQs:hover a, .dcjqQs:focus a {
+    color: rgb(249, 249, 249);
+}
+
+.eeBCak {
+    display: block;
+    float: left;
+    opacity: 1;
+    transition: opacity 300ms ease 250ms, color 300ms ease 0s;
+}
+
+@media (min-width: 1440px){
+    .eeBCak {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.margin--left-4 {
+    margin-left: 1rem;
+}
+
+.body-copy {
+    /* font-family: Avenir-World-for-Disney-Regular,sans-serif; */
+    font-size: 15px;
+    letter-spacing: -.1px;
+    line-height: 1.6;
+}
+
+.gHzMKE {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-align: center;
+}
+
+.kOICNQ {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    height: 36px;
+    width: 36px;
+    background: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/860C4A04F49C9678C54EDCE3DBC95CF7E8C93116B69EC81CF88871E1D60A7F5A/scale?width=96&format=png) 0% 0% / contain no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    transition: all 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
+}
+
+@media (min-width: 768px){
+    .kOICNQ {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.kxEVVW.active {
+    opacity: 1;
+    transition: opacity 300ms ease 300ms;
+    width: 200px;
+}
+
+.kxEVVW {
+    background-color: rgba(249, 249, 249, 0.1);
+    display: flex;
+    height: 1px;
+    margin: 0px 0px 8px;
+    opacity: 0;
+    width: 0px;
+}
+
+.hbptig {
+    height: 100%;
+    max-height: calc(100vh - 135px);
+    overflow: hidden auto;
+}
+
+.dcjqQs.active {
+    opacity: 1;
+    transition-delay: 300ms;
+    transition-duration: 500ms;
+    width: 199px;
+}
+
+.jpVPud {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    height: 36px;
+    width: 36px;
+    background: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BD2FA0F3965617FC515E3CEBD3AD51C00CCFFBF98F96448EFE46B82867FCE542/scale?width=96&format=png) 0% 0% / contain no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    transition: all 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
+}
+
+.jpVPud::after {
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0);
+    inset: 0px;
+    content: "";
+    position: absolute;
+    transition: border 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
+}
+
+.eeBCak {
+    display: block;
+    float: left;
+    opacity: 1;
+    transition: opacity 300ms ease 250ms, color 300ms ease 0s;
+}
+
+@media (min-width: 1440px){
+    .eeBCak {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px){
+    .jpVPud {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.kHBzmg .dropdown-options {
+    padding-bottom: 8px;
+}
+
+.kHBzmg .add-profile {
+    height: 36px;
+    margin-bottom: 8px;
+    width: 36px;
+}
+
+@media (min-width: 768px){
+    .kHBzmg .add-profile {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.AEjQN {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(249, 249, 249, 0.1);
+    border: none;
+    border-radius: 48px;
+    display: flex;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 48px;
+}
+
+.kHBzmg .add-profile svg {
+    height: 18px;
+    width: 18px;
+}
+
+@media (min-width: 768px){
+    .kHBzmg .add-profile svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
+.text-color--secondary {
+    color: #cacaca;
+}
+
+.jwdAZt > li:first-child a {
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+}
+
+.gIjMpm a {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 100%;
+}
+
+.jwdAZt {
+    background: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+    height: 100%;
+    max-height: 72px;
+    padding: 0px 20px;
+    width: 100px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px;
+    position: absolute;
+    right: 0px;
+    transition-duration: 300ms;
+    transition-property: max-height, height, padding;
+    transition-timing-function: ease-in-out;
+}
+
+.jwdAZt > li:first-child {
+    height: 72px;
+    opacity: 1;
+    width: auto;
+}
+
+@media (min-width: 1440px){
+    .jwdAZt {
+        width: 240px;
+    }
+}
+
+.gIjMpm {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    overflow: hidden;
+    padding: 8px 0px;
+    position: relative;
+    text-align: left;
+    transition: opacity 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 250ms;
+    width: 0px;
+}
+
+.iesoaL {
     display: none;
+    float: left;
+    opacity: 0;
+    transition: opacity 300ms ease 250ms, color 300ms ease 0s;
+}
+
+.jwdAZt > li:first-child p {
+    color: rgb(249, 249, 249);
+    margin-right: 16px;
+}
+
+@media (min-width: 1440px){
+    .iesoaL {
+        display: block;
+        opacity: 1;
+    }
 }
