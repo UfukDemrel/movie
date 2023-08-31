@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 
 function Header() {
+  const [liTabIndex, setLiTabIndex] = useState(-1);
 
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
+    setLiTabIndex(0);
   };
 
   const handleMouseLeave = () => {
+    setLiTabIndex(-1);
     setIsHovered(false);
   };
 
@@ -16,8 +19,8 @@ function Header() {
   const liClass = isHovered ? 'sc-likbZx dcjqQs' : 'sc-likbZx gIjMpm';
   const divClass = isHovered ? 'sc-likbZx dcjqQs active' : 'sc-likbZx gIjMpm';  
   const pClass = isHovered ? 'body-copy margin--0 sc-eKZiaR text-color--secondary margin--left-4' : 'body-copy margin--0 sc-eKZiaR iesoaL text-color--secondary margin--left-4';
-  const active = isHovered ? 'sc-ePZHVD kxEVVW active' : 'sc-ePZHVD kxEVVW';  
-  
+  const active = isHovered ? 'sc-ePZHVD kxEVVW active' : 'sc-ePZHVD kxEVVW';   
+  const liactive = isHovered ? 'sc-likbZx dcjqQs dropdown-options active' : 'sc-likbZx gIjMpm dropdown-optionsfalse'; 
 
   return (
     <div>
@@ -144,8 +147,8 @@ function Header() {
                 </a>
             </li>
 
-            <li aria-hidden="true" aria-label="Profil Ekleyin" class="sc-likbZx dcjqQs dropdown-options active" id="dropdown-option_add-profile" data-testid="dropdown-option-0-add-profile" role="menuitem" tabindex="-1">
-                <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">
+            <li aria-hidden="true" aria-label="Profil Ekleyin" className={liactive} id="dropdown-option_add-profile" data-testid="dropdown-option-0-add-profile" role="menuitem" tabIndex={liTabIndex}>
+                <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabindex="-1">
                   <span style={{alignItems: "center", color: "rgb(202, 202, 202)", display: "flex"}}>
                     <div aria-label="Add Profile" class="sc-fyjhYU AEjQN add-profile" role="button" style={{marginRight: "16px"}}>
                       <svg aria-hidden="true" aria-label="plus" color="white" role="img" transform="" version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="sc-bRBYWo bFBSwK">
@@ -158,18 +161,19 @@ function Header() {
                 </a>
             </li>
 
-            <li aria-hidden="true" aria-label="Profilleri Düzenleyin" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_edit-profiles" data-testid="dropdown-option-1-edit-profiles" role="menuitem" tabIndex="-1">
-                <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Profilleri Düzenleyin</a></li>
-                <li aria-hidden="true" aria-label="Uygulama Ayarları" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_app-settings" data-testid="dropdown-option-2-app-settings" role="menuitem" tabindex="-1">
+                <li aria-hidden="true" aria-label="Profilleri Düzenleyin" className={liactive} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} id="dropdown-option_edit-profiles" data-testid="dropdown-option-1-edit-profiles" role="menuitem" tabIndex={liTabIndex}>
+                <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Profilleri Düzenleyin</a>
+                </li>
+                <li aria-hidden="true" aria-label="Uygulama Ayarları" className={liactive} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} id="dropdown-option_app-settings" data-testid="dropdown-option-2-app-settings" role="menuitem" tabIndex={liTabIndex}>
                   <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Uygulama Ayarları</a>
                 </li>
-                <li aria-hidden="true" aria-label="Hesap" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_account" data-testid="dropdown-option-3-account" role="menuitem" tabIndex="-1">
+                <li aria-hidden="true" aria-label="Hesap"className={liactive} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} id="dropdown-option_account" data-testid="dropdown-option-3-account" role="menuitem" tabIndex={liTabIndex}>
                   <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Hesap</a>
                 </li>
-                <li aria-hidden="true" aria-label="Yardım" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_help" data-testid="dropdown-option-4-help" role="menuitem" tabindex="-1">
-                  <a aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" href="https://help.disneyplus.com" tabindex="-1" target="external">Yardım</a>
+                <li aria-hidden="true" aria-label="Yardım" className={liactive} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} id="dropdown-option_help" data-testid="dropdown-option-4-help" role="menuitem" tabIndex={liTabIndex}>
+                  <a aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" href="https://help.disneyplus.com" tabIndex="-1" target="external">Yardım</a>
                 </li>
-                <li aria-hidden="true" aria-label="Oturumu Kapat" className='sc-likbZx dcjqQs dropdown-options active' id="dropdown-option_logout" data-testid="dropdown-option-5-logout" role="menuitem" tabindex="-1">
+                <li aria-hidden="true" aria-label="Oturumu Kapat" className={liactive} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} id="dropdown-option_logout" data-testid="dropdown-option-5-logout" role="menuitem" tabIndex={liTabIndex}>
                   <a href='sadasd' aria-hidden="true" class="text-button text-color--secondary" data-route="Profile" tabIndex="-1">Oturumu Kapat</a>
                 </li>
             </div>
