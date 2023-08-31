@@ -1,6 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Header() {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const [liTabIndex, setLiTabIndex] = useState(-1);
 
   const [isHovered, setIsHovered] = useState(false);
@@ -25,7 +43,7 @@ function Header() {
   return (
     <div>
       <header className="header">
-        <nav className='sc-hGoxap JRtlS sc-kQsIoO iJigMv navigation navigation__navigation-bar'>
+      <nav className={`sc-hGoxap JRtlS sc-kQsIoO iJigMv navigation navigation__navigation-bar ${scrolled ? 'scrolled' : ''}`}>
         <button aria-label="İçeriğe Atla" data-testid="" id="skipToContentButton" kind="secondary" class="sc-brqgnP iPFLWk button button--secondary sc-dCzMmV gLASoB" type="submit">İçeriğe Atla</button>
           <ul id="nav-list" aria-hidden="true" className="sc-eXNvrr hMqyAO">
               <div className="sc-jbKcbu gbHCZO" aria-label="logo" title="logo" role="img" id="logo" placeholder="logo" tabIndex="0">
